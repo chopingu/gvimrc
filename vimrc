@@ -15,8 +15,6 @@ set hlsearch
 
 call plug#begin()
 Plug 'bfrg/vim-cpp-modern'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -62,7 +60,7 @@ autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\
 au GUIEnter * simalt ~x
 
 " Set font and size
-set gfn=Fixedsys:h16
+set gfn=Fixedsys:h14
 
 " Add line numbers
 set number
